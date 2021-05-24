@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="zh">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>测试</title>
+
+</head>
+<body>
+    <div id="textBox"></div>
+    <style id="effect"></style>
+    <div id="button">
+        <button id="btnPause">暂停</button>
+        <button id="btnPlay">播放</button>
+        <button id="btnSlow">慢速</button>
+        <button id="btnNormal">中速</button>
+        <button id="btnFast">快速</button>
+        <button id="btnEnd">跳过</button>
+        <button id="btnAgain">重来</button>
+    </div>
+    <style>body{
+            overflow-y:hidden;
+        }
+        #button{
+            position: fixed;
+            z-index: 10;
+            display: flex;
+            flex-direction: column;
+            right: 0;
+            
+        }
+        #button>button{
+            margin-top: 10px;
+            margin-right: 10px;
+            font-size: 20px;
+            padding: 4px 8px;
+        }
+        #description{
+            position: fixed;
+        }
+        
+        #html{
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 60vh;
+        }
+        #effect{
+            display: none;
+        }
+        #textBox{
+            position: fixed;
+            height: 40vh;
+            bottom: 0;
+            left: 0;
+            width: 100%;
+            border: 1px solid black;
+            overflow-y: auto;
+            background: white;
+            z-index: 10;
+            box-shadow:0 0 2px 0 #999; 
+
+        }</style>
+    <div id="html">
+        <div class="skin">
+            <div class="eyebrow left"></div>
+            <div class="eyebrow right"></div>
+            <div class="eye left"></div>
+            <div class="eye right"></div>
+
+ 
+        <div class="nose">
+            <div class="nose-bottom">
+                <div class="nose-top"></div>
+            </div>
+        </div>
+        <div class="face right"><img src="/3.375e542d.gif"></div>
+        <div class="face left"><img src="/3.375e542d.gif"></div>
+        <div class="mouth">
+            <div class="top">
+                <div class="lip left"></div>
+                <div class="lip right"></div>
+            </div>
+            <div class="bottom">
+                <div class="tongue">
+                    <div class="jaw"></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="caution">⚠CAUTION⚠</div>
+        
+    </div>
+    <script src="/main.1f19ae8e.js"></script>
+    <script src="/test.e98b79dd.js"></script>
+</body>
+</html>
