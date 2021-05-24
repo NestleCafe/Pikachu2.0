@@ -117,23 +117,8 @@ parcelRequire = (function (modules, cache, entry, globalName) {
   }
 
   return newRequire;
-})({"string.js":[function(require,module,exports) {
-"use strict";
-
-Object.defineProperty(exports, "__esModule", {
-  value: true
-});
-exports.default = void 0;
+})({"test.js":[function(require,module,exports) {
 var string = ".skin *{box-sizing: border-box; margin:0; padding:0;}\n.skin *::before, *::after{box-sizing: border-box;}\nbody{\n    height: 100vh;\n    background: rgb(255,230,0);\n}\n.skin{\n    position: relative;\n    min-height: 50vh;\n    position: relative;\n}\n\n@keyframes wave{\n    0%{\n        transform: rotate(0deg);\n    }\n    33%{\n        transform: rotate(0.5deg);\n    }\n    66%{\n        transform: rotate(-0.5deg);\n    }\n    100%{\n        transform: rotate(0deg);\n    }\n}\n.nose:hover{\n    transform-origin: center bottom;\n    animation: wave 0.23s infinite linear;\n}\n.nose-bottom{\n    position: relative;\n    height: 0px;\n    width: 0px;\n    border: 10px solid black;\n    border-bottom: none;\n    border-color: black transparent transparent;\n    left: 50%;\n    top: 145px;\n    margin-left: -10px;\n}\n\n.nose-top{\n    position: absolute;\n    height: 6px;\n    width: 19px;\n    top: -13px;\n    left: -9.5px;\n    border-color: black  black  transparent black;\n    border-radius: 50% ;\n    background: black;\n}\n.eyebrow{\n    position: absolute;\n    border: 0.3em solid black;\n    height: 30px;\n    width: 100px;\n    left: 50%;\n    margin-left: -50px;\n    top: 125px;\n    display: none;\n}\n.eyebrow.left{\n    border-color: transparent black  black transparent;\n    border-radius: 0 0 80% 0;\n    transform: rotate(32deg) translateX(-100px);\n}\n.eyebrow.right{\n    border-color: transparent  transparent  black black;\n    border-radius: 0 0 0 80%;\n    transform: rotate(-32deg) translateX(100px);\n}\n\n\n.eye{\n    border: 3px solid black;\n    width: 64px;\n    height: 64px;\n    border-radius: 50%;\n    background: rgb(46, 46, 46);\n    position: absolute;\n    left: 50%;\n    margin-left: -32px;\n    top: 100px;\n}\n.eye::before{\n    content: '';\n    display: block;\n    border: 3px solid black;\n    width: 32px;\n    height: 32px;\n    background: white;\n    border-radius: 50%;\n    position: relative;\n    left: 8px;\n}\n.eye.left{\n    border: 1px solid black;\n    transform: translateX(-100px);\n}\n.eye.right{\n    transform: translateX(100px);\n}\n.mouth{\n    width: 200px;\n    height: 200px;\n    position: absolute;\n    left: 50%;\n    top: 170px;\n    margin-left: -100px;\n}\n\n.mouth .top {\n    position: relative;\n    z-index: 1;\n}\n\n.mouth .top .lip{\n    position: absolute;\n    border: 0.3em solid black;\n    height: 30px;\n    width: 100px;\n    background: rgb(255,230,0);\n}\n.mouth .top .lip::before{ \n    content: '';\n    display: block;\n    height: 13px;\n    margin-top: -13px;\n    background: rgb(255,230,0);\n}\n\n.mouth .top .lip.left{\n    border-color: transparent  transparent  black black;\n    border-radius: 0 0 0 80%;\n    transform: rotate(-32deg);\n    left: 4px;\n}\n\n.mouth .top .lip.right{\n    border-color: transparent black  black transparent;\n    border-radius: 0 0 80% 0;\n    transform: rotate(32deg);\n    left: calc(50% - 4px);\n}\n.mouth .bottom{\n    position: absolute;\n    height: 180px;\n    width: 100%;\n    overflow: hidden;\n    top: 3px;\n}\n.mouth .bottom .tongue{\n    border: 3px solid black;\n    width: 150px;\n    position: absolute;\n    height: 700px;\n    bottom: 0;\n    left: 50%;\n    margin-left: -75px;\n    border-radius: 0 0 60% 60%;\n    background: rgb(155,0,10);\n    overflow: hidden;\n}\n.mouth .bottom .tongue .jaw{\n    background: rgb(255,72,95);\n    width: 200px;\n    height: 300px;\n    position: absolute;\n    bottom: -160px;\n    left: 50%;\n    margin-left: -100px;\n    border-radius: 50%;\n}\n\n.face{\n    position: absolute;\n    left: 50%;\n    border: 3px solid black;\n    border-radius: 50%;\n    width: 88px;\n    height: 88px;\n    top: 220px;\n    margin-left: -44px;\n    background: red;\n}\n.face.left{\n    transform: translateX(-170px);\n}\n.face.right{\n    transform: translateX(170px);\n}\n.face > img{\n    position: absolute;\n    top: 50%;\n    left: 50%;\n    display: none;\n}\n.face.left > img{\n    transform: rotateY(180deg);\n    transform-origin: 0 0;\n}\n\n@keyframes blur {\n    0%{\n      text-shadow:0px 0px 10px #fff;\n    }\n    20%{\n      text-shadow:0px 0px 25px #fff; \n    }\n    40%{\n      text-shadow:0px 0px 50px #fff;\n    }\n    60%{\n      text-shadow:0px 0px 50px #7B96B8;\n    }\n    80%{\n      text-shadow:0px 0px 150px #7B96B8;\n    }\n    100%{\n      text-shadow:0px -10px 100px #7B96B8,\n    }\n  }\n.caution {\n    display: none;\n    position: absolute;\n    bottom: 0;\n    left: 50%;\n    margin-left: -330px;\n    font-size: 6.5em;\n    color: #fff;\n    animation: blur 1s  infinite;\n    text-shadow:0px 0px 7px #fff;\n    z-index: 5;\n    pointer-events: none;\n  }\n\n";
-var _default = string;
-exports.default = _default;
-},{}],"test.js":[function(require,module,exports) {
-"use strict";
-
-var _string = _interopRequireDefault(require("./string"));
-
-function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
-
 var player = {
   //初始化方法
   id: undefined,
@@ -153,8 +138,8 @@ var player = {
     '#btnAgain': 'reload'
   },
   init: function init() {
-    player.ui.textBox.innerText = _string.default.substring(0, player.n);
-    player.ui.effect.innerHTML = _string.default.substring(0, player.n);
+    player.ui.textBox.innerText = string.substring(0, player.n);
+    player.ui.effect.innerHTML = string.substring(0, player.n);
     player.bindEvents();
     player.play();
   },
@@ -170,12 +155,12 @@ var player = {
   run: function run() {
     player.n += 1;
 
-    if (player.n > _string.default.length) {
+    if (player.n > string.length) {
       window.clearInterval(player.id);
     }
 
-    player.ui.textBox.innerText = _string.default.substring(0, player.n);
-    player.ui.effect.innerHTML = _string.default.substring(0, player.n);
+    player.ui.textBox.innerText = string.substring(0, player.n);
+    player.ui.effect.innerHTML = string.substring(0, player.n);
     player.ui.textBox.scrollTop = player.ui.textBox.scrollHeight;
   },
   play: function play() {
@@ -201,9 +186,9 @@ var player = {
   },
   end: function end() {
     player.pause();
-    player.n = _string.default.length;
-    player.ui.textBox.innerText = _string.default;
-    player.ui.effect.innerHTML = _string.default;
+    player.n = string.length;
+    player.ui.textBox.innerText = string;
+    player.ui.effect.innerHTML = string;
     player.ui.textBox.scrollTop = player.ui.textBox.scrollHeight;
   },
   reload: function reload() {
@@ -211,7 +196,7 @@ var player = {
   }
 };
 player.init();
-},{"./string":"string.js"}],"C:/Users/Nestle/AppData/Local/Yarn/Data/global/node_modules/parcel/src/builtins/hmr-runtime.js":[function(require,module,exports) {
+},{}],"C:/Users/Nestle/AppData/Local/Yarn/Data/global/node_modules/parcel/src/builtins/hmr-runtime.js":[function(require,module,exports) {
 var global = arguments[3];
 var OVERLAY_ID = '__parcel__error__overlay__';
 var OldModule = module.bundle.Module;
