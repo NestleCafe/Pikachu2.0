@@ -3,6 +3,7 @@
 body{
     height: 100vh;
     background: rgb(255,230,0);
+    overflow: hidden;
 }
 .skin{
     position: relative;
